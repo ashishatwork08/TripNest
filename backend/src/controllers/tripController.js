@@ -1,5 +1,5 @@
 const {GoogleGenerativeAI} = require('@google/generative-ai');
-const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 exports.generateItinerary = async (req, res) => {
     const {destination, checkIn, checkOut, budget, travelers} = req.body;
