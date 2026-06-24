@@ -15,7 +15,7 @@ const reviewRoutes = require("./routes/reviews");
 
 app.use(helmet());
 app.use(cors({
-  origin: "http://localhost:5173", // Vite ka port
+  origin:  process.env.CLIENT_URL, // Vite ka port
   credentials: true
 }));
 app.use(morgan("dev"));
